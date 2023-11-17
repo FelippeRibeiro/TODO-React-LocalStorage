@@ -10,11 +10,13 @@ Create a TODOLIST in react using LocalStorage to save TODOS, with zustand and ta
 
 ## Instalação
 
-Instale o projeto com git
+Install the project with git
 
 ```bash
- - git clone git@github.com:FelippeRibeiro/TODOLIST-React-LocalStorage.git
+ - git clone https://github.com/FelippeRibeiro/TODOLIST-React-LocalStorage
  - cd TODOLIST-React-LocalStorage
  - npm install
  - npm run dev
 ```
+
+Open your browser in http://localhost:5173
