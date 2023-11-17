@@ -16,6 +16,5 @@ Instale o projeto com git
  - git clone git@github.com:FelippeRibeiro/TODOLIST-React-LocalStorage.git
  - cd TODOLIST-React-LocalStorage
  - npm install
- - npm run build
- - npm run start
+ - npm run dev
 ```
