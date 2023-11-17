@@ -7,12 +7,17 @@ export default function CreateTodo() {
   const { addTodo } = TodoStore();
 
   function handleCreate() {
-    if (!TitleInput.current?.value) return;
+    if (!TitleInput.current?.value) {
+      alert('Title cannot be empty');
+      return;
+    }
     addTodo({
       title: TitleInput.current.value,
       description: DescriptionInput.current?.value || '',
       completed: false,
     });
+    TitleInput.current.value = '';
+    DescriptionInput.current?.value && (DescriptionInput.current.value = '');
   }
 
   return (
