@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="w-screen h-screen">
+      <div className="w-screen h-screen overflow-x-hidden">
         <main className="w-full h-full flex flex-col items-center">
           <h1>TODO LIST</h1>
           <h2>Total: {Todos.length}</h2>
