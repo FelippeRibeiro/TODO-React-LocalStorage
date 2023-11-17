@@ -19,15 +19,7 @@ export interface ITodo {
 export const TodoStore = create<TTodoStore>()(
   persist(
     (set) => ({
-      Todos: [
-        { completed: false, description: 'So decidi fazer esse projeto', id: v4(), title: 'Terminar esse projeto' },
-        {
-          completed: false,
-          description: 'Terminar o projeto2',
-          id: v4(),
-          title: 'Terminar o projeto2',
-        },
-      ],
+      Todos: [],
       addTodo: (todo: Pick<ITodo, 'title' | 'description' | 'completed'>) => set((state) => ({ Todos: [...state.Todos, { id: v4(), ...todo }] })),
       removeTodo: (id: string) => set((state) => ({ Todos: state.Todos.filter((todo) => todo.id !== id) })),
       toggleTodo: (id: string) =>
